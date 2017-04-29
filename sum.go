@@ -21,7 +21,7 @@ func Sum(data []float64,id int){
 
 	resmsg := comm.ResMessage{Id:id,Result:sum}
 
-	resmsg.Send("public/res")
+	resmsg.Send("public:8000/res")
 }
 
 func main(){
