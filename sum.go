@@ -5,6 +5,7 @@ import (
 	"github.com/josh-gree/comm"
 	"math/rand"
 	"time"
+	"fmt"
 )
 
 var j = comm.JobMessage{}
@@ -24,9 +25,10 @@ func Sum(data []float64,id int){
 }
 
 func main(){
+	fmt.Println("Hello!")
 	e := echo.New()
 
 	e.POST("/job", j.Recieve(public,Sum))
 
-	e.Start(":8001")
+	e.Start(":8005")
 }
