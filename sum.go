@@ -7,6 +7,7 @@ import (
 
 	"github.com/josh-gree/comm"
 	"github.com/labstack/echo"
+	"github.com/labstack/gommon/log"
 )
 
 var j = comm.JobMessage{}
@@ -14,6 +15,7 @@ var r = comm.ResMessage{}
 var public = false // read from cml
 
 func Sum(data []float64, id int) {
+	log.Info("Doing computation")
 	sum := 0.0
 	for _, d := range data {
 		sum += d
