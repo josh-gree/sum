@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"time"
 
+	log "github.com/Sirupsen/logrus"
 	"github.com/josh-gree/comm"
 	"github.com/labstack/echo"
-	"github.com/labstack/gommon/log"
 )
 
 var j = comm.JobMessage{}
