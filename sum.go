@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math/rand"
 	"time"
 
@@ -28,7 +27,6 @@ func Sum(data []float64, id int) {
 }
 
 func main() {
-	fmt.Println("Hello!")
 	e := echo.New()
 
 	e.POST("/job", j.Recieve(public, Sum))
